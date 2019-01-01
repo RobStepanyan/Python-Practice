@@ -18,7 +18,6 @@ def ingly(s):
 s = input("Input: ")
 print(ingly(s))
 
-
 # 6.
 # Write a Python function that takes a list of words 
 # and returns the length of the longest one.
@@ -33,7 +32,6 @@ def no6(l):
 
 s = ["Python", "Java", "JavaScript", "PHP", "SQL", "Haskell"]
 print(no6(s))
-
 
 # 7.
 # Write a Python program to count the 
@@ -50,3 +48,43 @@ def occ(s):
 
 s = input("Input: ")
 print(occ(s))
+
+# 8.
+# Write a Python function to create the HTML string with tags around the word(s).
+# Sample function and result : 
+# add_tags('i', 'Python') -> '<i>Python</i>'
+# add_tags('b', 'Python Tutorial') -> '<b>Python Tutorial </b>'
+def html(t, s):
+	return f"<{t}>{s}</{t}>"
+
+t = input("Input tag: ")
+s = input("Input word: ")
+print(html(t,s))
+
+# 9.
+# Write a Python function to convert a given string to all 
+# uppercase if it contains at least 2 uppercase characters 
+# in the first 4 characters. If the string contains less than
+# 4 characters then return original string
+def smup(s):
+	if len(s) < 4:
+		return s
+	else:
+		q = 0
+		for i in s[:4]:
+			if i == i.upper():
+				q +=1
+		if q >=2:
+			return s.upper()
+		return s
+
+s = input("Input: ")
+print(smup(s))
+
+# 10.
+# Write a Python program that accepts a comma separated 
+# sequence of words as input and prints the unique 
+# words in sorted form (alphanumerically).
+s = input("Input: ")
+s = s.split(", ")
+print(", ".join(sorted(s)))
