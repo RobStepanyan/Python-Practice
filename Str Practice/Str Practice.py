@@ -113,7 +113,7 @@ s = input("Input: ")
 print(rev(s))
 
 # 14.
-# Strip a set of characters from a string
+# Strip a set of characters from a string.
 def stch(s, c):
 	return "".join(i for i in s if i not in c)
 
@@ -121,3 +121,79 @@ s = input("Input str.: ")
 c = input("Input unallowed chars: ")
 print(stch(s,c))
 
+# 15.
+# Count repeated characters in a string.
+def rep(s):
+	d = {}
+	for i in s:
+		if s.count(i) > 1 and i not in d.keys():
+			d[i] = s.count(i)
+	for k, v in d.items():
+		print(k, v)
+
+s = input("Input: ")
+rep(s)
+
+# 16.
+# Write a Python program to find the first
+# non-repeating character in given string. 
+def frnon(s):
+	l = list(s)
+	for i in l:
+		if s.count(i) == 1:
+			return "First non-repeating character is: " + i
+	return "All chars are repeating"
+
+s = input("Input: ")
+print(frnon(s))
+
+# 17.
+# Write a Python program to find the
+# first repeated character in a given string.
+def frrep(s):
+	l = list(s)
+	for i in l:
+		if s.count(i) >= 2:
+			return "First repeated character: " + i
+	return "There are no repeating characters"
+
+s = input("Input: ")
+print(frrep(s))
+
+# 18.
+# Write a Python program to compute 
+# sum of digits of a given string.
+def sumod(s):
+	sm = 0
+	l = list(s)
+	for i in l:
+		if i.isdigit():
+			sm = sm + int(i)
+	return sm
+
+s = "adjjr5nmkkfdjf9ko"
+print(sumod(s))
+
+# 19.
+# Remove leading zeros from an IP address
+def rmvz(s):
+	ns = ".".join([str(int(i)) for i in s.split(".")])
+	return ns
+
+s = input("Input: ")
+print(rmvz(s))
+
+# 20.
+# Write a Python program to count
+# and display the vowels of a given text.
+def vowels(s):
+	l = list(s)
+	q = 0
+	for i in l:
+		if i.lower() in "aeiou":
+			print(i)
+			q +=1
+	print("There are " + str(q) + " vowels.")
+
+s = input("Input: ")
+vowels(s)
