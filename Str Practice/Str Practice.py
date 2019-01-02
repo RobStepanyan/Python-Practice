@@ -88,3 +88,36 @@ print(smup(s))
 s = input("Input: ")
 s = s.split(", ")
 print(", ".join(sorted(s)))
+
+# 11.
+# Write a Python program to print the following 
+# floating numbers upto 2 decimal places.
+n = float(input("Input: "))
+print("N: {:.2f}".format(n))
+
+# 12.
+# Count occurrences of a substring in a string
+s = input("String:")
+ss = input("Substring: ")
+print("There are " + str(s.count(ss)) + " " + ss + " in the sentence")
+
+# 13.
+# Write a Python program to reverse words in a string.
+def rev(s):
+	ss = ""
+	s = s.split()
+	for i in range(len(s)-1, -1, -1):
+		ss += s[i] + " "
+	return ss
+s = input("Input: ")
+print(rev(s))
+
+# 14.
+# Strip a set of characters from a string
+def stch(s, c):
+	return "".join(i for i in s if i not in c)
+
+s = input("Input str.: ")
+c = input("Input unallowed chars: ")
+print(stch(s,c))
+
