@@ -59,6 +59,67 @@ def rmvdup(l):
 
 print(rmvdup(l))
 
+# 8.
+# Write a Python program to check a list is empty or not.
+def emptn(l):
+	if len(l) == 0:
+		return "List is empty!"
+	return "List is NOT empty!"
+
+l = []
+l2 = ["I'm", "NOT", "Empty", "."]
+print("List1: ", emptn(l))
+print("List2: ", emptn(l2))
+
+# 9.
+# Write a Python program to 
+# convert a list of characters into a string.
+l = ["H", "e", "l", "l", "o"]
+print("".join(l))
+
+# 10.
+# Write a Python program to find the 
+# index of an item in a specified list
+l = ["Python", "JavaScript", "Haskell", "PHP"]
+ch = input("What item's index to find: ")
+print(l.index(ch))
+
+# 11.
+# Write a Python program to append a list to the second list.
+l1 = [1,1,1,1,1]
+l2 = [2,2,2,2,2]
+print(l1 + l2)
+
+# 12.
+# Write a Python program to select an item randomly from a list.
+import random
+l = [1, 2, 3,5,6,7,8,5]
+print(random.choice(l))
+
+# 13.
+# Write a python program to check 
+# whether two lists are circularly identical.
+def circ(l1, l2):
+	ans = " ".join(map(str,l1)) in " ".join(map(str,l2*2))
+	return ans
+
+l1 = [1,2,3,9,9,9]
+l2 = [9,1,2,3,9,9]
+print(circ(l1,l2))
+
+# 14.
+# Write a Python program to get the 
+# frequency of the elements in a list.
+import collections as cll
+l = [1,2,3,4,5,1,2,3,4,5,6]
+print(cll.Counter(l))
+
+
+
+
+
+
+
 
 
 
