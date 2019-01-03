@@ -114,6 +114,24 @@ import collections as cll
 l = [1,2,3,4,5,1,2,3,4,5,6]
 print(cll.Counter(l))
 
+# 15.
+# Write a Python program to count the number 
+# of elements in a list within a specified range.
+def inrng(l, s, e):
+	q = 0
+	for i in l:
+		if i >=s and i<=e:
+			q +=1
+	return q
+
+s = input("Count items in range (from): ")
+e = input("Count items in range (to): ")
+l = ["a", "b", "c", "d", "e"]
+print(inrng(l, s, e))
+
+
+
+
 
 
 
