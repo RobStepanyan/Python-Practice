@@ -129,10 +129,25 @@ e = input("Count items in range (to): ")
 l = ["a", "b", "c", "d", "e"]
 print(inrng(l, s, e))
 
+# 16.
+# Write a Python program using Sieve of 
+# Eratosthenes method for computing primes 
+# upto a specified number.
+def prime(n):
+	for i in range(2, n+1):
+		for j in range(2, i):
+			if i%j == 0:
+				break
+		else:
+			print(i, " ")
+prime(10)
 
-
-
-
+# 17.
+# Write a Python program to create a list by 
+# concatenating a given list which range goes from 1 to n.
+l = ["A", "B", "C"]
+n = int(input("Input n: "))
+print(["{}{}".format(x, y) for y in range(1, n +1) for x in l])
 
 
 
