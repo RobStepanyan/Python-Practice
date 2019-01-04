@@ -149,14 +149,8 @@ l = ["A", "B", "C"]
 n = int(input("Input n: "))
 print(["{}{}".format(x, y) for y in range(1, n +1) for x in l])
 
-
-
-
-
-
-
-
-
-
-
-
+# 18.
+# Write a Python program to convert list to list of dictionaries.
+color_name = ["Black", "Red", "Maroon", "Yellow"]
+color_code = ["#000000", "#FF0000", "#800000", "#FFFF00"]
+print([{"color_name": n, "color_code": c} for n, c in zip(color_name, color_code)])
