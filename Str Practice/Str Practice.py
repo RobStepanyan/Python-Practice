@@ -1,3 +1,65 @@
+# 1.
+# Write a Python program to count the number of characters (character frequency) in a string.
+# Sample String : google.com'
+# Expected Result : {'o': 3, 'g': 2, '.': 1, 'e': 1, 'l': 1, 'm': 1, 'c': 1}
+
+def freq(s):
+	d = {}
+	for char in s:
+		if char in d.keys():
+			d[char] += 1
+		else:
+			d[char] = 1
+
+	return d
+
+s = input("Input: ")
+print(freq(s))
+
+# 2.
+# Write a Python program to get a string made of the first 2 and the last 2 chars from a given a string. 
+# If the string length is less than 2, return instead of the empty string. 
+# Sample String : 'w3resource'
+# Expected Result : 'w3ce'
+
+def nds(s):
+	if len(s) < 2:
+		return ""
+	return s[:2]+s[-2:]
+
+s = input("Input: ")
+print(nds(s))
+
+# 3.
+# Write a Python program to get a string from a given string where all occurrences 
+# of its first char have been changed to '$', except the first char itself.
+# Sample String : 'restart'
+# Expected Result : 'resta$t'
+
+def tod(s):
+	fc = s[0]
+	s = s.replace(fc, "$")
+	s = fc + s[1:]
+	return s
+
+s = input("Input: ")
+print(tod(s))
+
+# 4.
+# Write a Python program to get a single string from two given strings, 
+# separated by a space and swap the first two characters of each string.
+# Sample String : 'abc', 'xyz' 
+# Expected Result : 'xyc abz'
+
+def no4(s1, s2):
+	aa = s2[:2] + s1[2:]
+	bb = s1[:2] + s2[2:]
+	return aa + " " + bb
+
+s1 = input("Input1: ")
+s2 = input("Input2: ")
+print(no4(s1, s2))
+
 # 5. 
 # Write a Python program to add 'ing' at the end of a given 
 # string (length should be at least 3). If the given string already 
