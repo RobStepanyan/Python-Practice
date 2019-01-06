@@ -1,0 +1,3 @@
+Method		Description
+count(x)	Return the number of items that is equal to x
+index(x)	Return index of first item that is equal to x

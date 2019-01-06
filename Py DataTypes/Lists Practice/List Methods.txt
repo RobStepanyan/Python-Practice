@@ -1,5 +1,6 @@
+Python List Methods
 append() - Add an element to the end of the list
-extend() - Add all elements of a list to the end of another list
+extend() - Add all elements of a list to the another list
 insert() - Insert an item at the defined index
 remove() - Removes an item from the list
 pop() - Removes and returns an element at the given index
