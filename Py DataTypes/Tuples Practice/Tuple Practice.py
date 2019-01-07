@@ -9,3 +9,6 @@ print(t2)
 # Create a tuple with different data types
 t = ("Hey", True, 1)
 print(t)
+
+# 3.
+hey commited via pycharm
