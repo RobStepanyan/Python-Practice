@@ -1,0 +1,56 @@
+Tuples
+A tuple is an immutable list. A tuple can not be changed in any way once it is created.
+________________________________________________________________
+>>> a_tuple = ("a", "b", "mpilgrim", "z", "example")  ①
+
+>>> a_tuple
+('a', 'b', 'mpilgrim', 'z', 'example')
+
+>>> a_tuple[0]                                        ②
+'a'
+
+>>> a_tuple[-1]                                       ③
+'example'
+
+>>> a_tuple[1:3]                                      ④
+('b', 'mpilgrim')
+________________________________________________________________
+A tuple is defined in the same way as a list, except that the whole set of elements is enclosed in parentheses instead of square brackets.
+The elements of a tuple have a defined order, just like a list. Tuple indices are zero-based, just like a list, so the first element of a non-empty tuple is always a_tuple[0].
+Negative indices count from the end of the tuple, just like a list.
+Slicing works too, just like a list. When you slice a list, you get a new list; when you slice a tuple, you get a new tuple.
+The major difference between tuples and lists is that tuples can not be changed. In technical terms, tuples are immutable. In practical terms, they have no methods that would allow you to change them. Lists have methods like append(), extend(), insert(), remove(), and pop(). Tuples have none of these methods. You can slice a tuple (because that creates a new tuple), and you can check whether a tuple contains a particular value (because that doesn’t change the tuple), and… that’s about it.
+________________________________________________________________
+# continued from the previous example
+>>> a_tuple
+('a', 'b', 'mpilgrim', 'z', 'example')
+
+>>> a_tuple.append("new")               ①
+Traceback (innermost last):
+  File "<interactive input>", line 1, in ?
+AttributeError: 'tuple' object has no attribute 'append'
+
+>>> a_tuple.remove("z")                 ②
+Traceback (innermost last):
+  File "<interactive input>", line 1, in ?
+AttributeError: 'tuple' object has no attribute 'remove' 
+
+>>> a_tuple.index("example")            ③
+4
+
+>>> "z" in a_tuple                      ④
+True
+________________________________________________________________
+
+-You can’t add elements to a tuple. Tuples have no append() or extend() method.
+-You can’t remove elements from a tuple. Tuples have no remove() or pop() method.
+-You can find elements in a tuple, since this doesn’t change the tuple.
+-You can also use the in operator to check if an element exists in the tuple.
+
+So what are tuples good for?
+
+-Tuples are faster than lists. If you’re defining a constant set of values and all you’re ever going to do with it is iterate through it, use a tuple instead of a list.
+-It makes your code safer if you “write-protect” data that doesn’t need to be changed. Using a tuple instead of a list is like having an implied assert statement that shows this data is constant, and that special thought (and a specific function) is required to override that.
+-Some tuples can be used as dictionary keys (specifically, tuples that contain immutable values like strings, numbers, and other tuples). Lists can never be used as dictionary keys, because lists are not immutable.
+
+☞Tuples can be converted into lists, and vice-versa. The built-in tuple() function takes a list and returns a tuple with the same elements, and the list() function takes a tuple and returns a list. In effect, tuple() freezes a list, and list() thaws a tuple.
