@@ -11,4 +11,9 @@ t = ("Hey", True, 1)
 print(t)
 
 # 3.
-hey commited via pycharm
+# Write a Python program to unpack a tuple in several variables.
+tp = (1, 2, 3)
+n1, n2, n3 = tp
+print(n1)
+print(n2)
+print(n3)
