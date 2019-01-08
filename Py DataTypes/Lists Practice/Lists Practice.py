@@ -5,7 +5,7 @@ l = [1,1,1,2,2,3,4,5]
 print(sum(l))
 
 # 2.
-# Write a Python program to multiplies
+# Write a Python program to multiplies 
 # all the items in a list.
 def prodl(l):
 	prd = 1
