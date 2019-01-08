@@ -35,7 +35,7 @@ print(nds(s))
 # of its first char have been changed to '$', except the first char itself.
 # Sample String : 'restart'
 # Expected Result : 'resta$t'
-
+ 
 def tod(s):
 	fc = s[0]
 	s = s.replace(fc, "$")
