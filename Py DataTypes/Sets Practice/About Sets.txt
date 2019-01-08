@@ -235,3 +235,6 @@ Any set with at least one item is true.
 Any set with at least one item is true. The value of the items is irrelevant.
 
 from "http://getpython3.com/diveintopython3/native-datatypes.html"
+
+Conclusion
+The Python sets are highly useful to efficiently remove duplicate values from a collection like a list and to perform common math operations like unions and intersections. Some of the challenges people often encounter are when to use the various data types. 
