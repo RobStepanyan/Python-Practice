@@ -100,3 +100,32 @@ t = ((1, "H"), (2, "e"), (3, "l"), (4, "l"), (5, "o"))
 d = (dict((x, y) for x, y in t))
 print(d)
 
+# 14.
+# Write a Python program to replace last value of tuples in a list.
+lt = [(1, 2, 2), (1, 2, 2), (5, 4, 4)]
+r = input("Replace last items with: ")
+print([t[:-1] + (r,) for t in lt])
+
+# 15.
+# Write a Python program to remove an
+# empty tuple(s) from a list of tuples.
+t = [(), (1, 2, 3), (), (1, 2)]
+print([i for i in t if i])
+
+# 16.
+# Write a Python program to sort a tuple by its float element.
+# Sample data: [('item1', '12.20'), ('item2', '15.10'), ('item3', '24.5')]
+# Expected Output: [('item3', '24.5'), ('item2', '15.10'), ('item1', '12.20')]
+l = [('item1', '12.20'), ('item2', '15.10'), ('item3', '24.5')]
+print(sorted(l, key = lambda x: float(x[-1]), reverse = True))
+
+# 17.
+# Count the elements in a list until an element is a tuple.
+l = [1, 2, 3, (), (4,)]
+q = 0
+for i in l:
+	if isinstance(i, tuple):
+		break
+	q +=1
+
+print(q)
