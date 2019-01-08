@@ -58,3 +58,45 @@ tt[2].append("Hi")
 print(tt)
 print(t)
 
+# 8.
+# Find how many times do specified item appears in the tuple.
+i = input("What to find: ")
+t = (1, 2, 3, 4, 5, i)
+print(t.count(i))
+
+# 9.
+# Check whether an element exists within a tuple.
+i = input("Input to check presence: ")
+t = (1, 2, 3, 4, 5)
+if i in t:
+	print(i, "exists in", t)
+else:
+	print(i, "is not in", t)
+
+# 10.
+# Write a Python program to remove an item from a tuple.
+t = (1, 2, 3, 4, 5, 6)
+i = input("What you want to remove from tuple? ")
+if i in t:
+	t = t[:t.index(i)] + t[t.index(i)+1:]
+	print("Removed", i, "from a tuple.\n", t)
+else:
+	print(i, "is not in tuple.")
+
+# 11
+# Write a Python program to find the index of an item of a tuple.
+i = input("What item's index you want to find? ")
+t = (1, 2, 3, 4, 5, 6, i)
+print(t.index(i))
+
+# 12.
+# Write a Python program to find the length of a tuple.
+t = (1, 2, 3, 4, 5)
+print(len(t))
+
+# 13.
+# Convert a tuple to a dictionary.
+t = ((1, "H"), (2, "e"), (3, "l"), (4, "l"), (5, "o"))
+d = (dict((x, y) for x, y in t))
+print(d)
+
