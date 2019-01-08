@@ -44,13 +44,14 @@ print(s)
 
 # 6.
 # Get the 4th element and 4th element from last of a tuple.
-t = (1, 2, 3, "4", 5, 6, "7", 8, 9 ,10)
+t = (1, 2, 3, "4", 5, 6, "7", 8, 9, 10)
 print("4th element:", t[3])
 print("4th element from last:", t[-4])
 
 # 7.
 # Create the colon of a tuple.
 from copy import deepcopy
+
 t = (1, 2, [])
 print(t)
 tt = deepcopy(t)
@@ -69,19 +70,19 @@ print(t.count(i))
 i = input("Input to check presence: ")
 t = (1, 2, 3, 4, 5)
 if i in t:
-	print(i, "exists in", t)
+    print(i, "exists in", t)
 else:
-	print(i, "is not in", t)
+    print(i, "is not in", t)
 
 # 10.
 # Write a Python program to remove an item from a tuple.
 t = (1, 2, 3, 4, 5, 6)
 i = input("What you want to remove from tuple? ")
 if i in t:
-	t = t[:t.index(i)] + t[t.index(i)+1:]
-	print("Removed", i, "from a tuple.\n", t)
+    t = t[:t.index(i)] + t[t.index(i) + 1:]
+    print("Removed", i, "from a tuple.\n", t)
 else:
-	print(i, "is not in tuple.")
+    print(i, "is not in tuple.")
 
 # 11
 # Write a Python program to find the index of an item of a tuple.
@@ -117,15 +118,15 @@ print([i for i in t if i])
 # Sample data: [('item1', '12.20'), ('item2', '15.10'), ('item3', '24.5')]
 # Expected Output: [('item3', '24.5'), ('item2', '15.10'), ('item1', '12.20')]
 l = [('item1', '12.20'), ('item2', '15.10'), ('item3', '24.5')]
-print(sorted(l, key = lambda x: float(x[-1]), reverse = True))
+print(sorted(l, key=lambda x: float(x[-1]), reverse=True))
 
 # 17.
 # Count the elements in a list until an element is a tuple.
 l = [1, 2, 3, (), (4,)]
 q = 0
 for i in l:
-	if isinstance(i, tuple):
-		break
-	q +=1
+    if isinstance(i, tuple):
+        break
+    q += 1
 
 print(q)
