@@ -44,6 +44,7 @@ def itd(d):
 
 itd(d)
 
+
 # 5.
 # Write a Python program to sum all the items in a dictionary.
 d = {1: 10, 2: 20, 3: 30}
@@ -74,6 +75,7 @@ def cd(n):
 
 n = int(input("Input n: "))
 print(cd(n))
+
 
 # 8.
 # Write a Python script to print a dictionary where the keys are numbers between
