@@ -1,3 +1,5 @@
 https://www.programiz.com/python-programming/
 https://www.w3resource.com/python-exercises/
 http://getpython3.com/diveintopython3/native-datatypes.html
+
+https://www.youtube.com/user/schafer5/playlists

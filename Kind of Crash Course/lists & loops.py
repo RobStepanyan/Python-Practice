@@ -72,5 +72,68 @@ del l[-1]
 print(l) # [1, 2, "Hi", "4"]
 print(b) # [1, 2, "Hi", "4"]
 
+
+
 # List built-in functions
 # List-ի ներկառուցված ֆունկցիաները
+
+# Max()
+l = [1, 2, 3, 4]
+print(max(l)) # 4
+
+l = ["Hi", "There"]
+print(max(l)) # There
+
+l = [True, False]
+print(max(l)) # True
+
+# Min()
+# It's opposite to max()
+# max()-ի հակառակը
+
+# len()
+# The length of a list
+# list-ի տարրերի քանակը
+l = [6]
+print(len(l)) # 1
+
+l = []
+print(len(l)) # 0
+
+# sum()
+# Summary of elements, if elements are numbers
+# Տարրերի գումարը, եթե տարրերը թվեր են
+l = [1, 1.2]
+print(sum(l)) # 2.2
+
+l = ["Hi", "A", "C", "B"]
+print(sorted(l)) # ['A', 'B', 'C', 'Hi']
+print(sorted(l, reverse= True)) # ['Hi', 'C', 'B', 'A']
+
+
+# List Methods
+# List-ի մեթոդները
+
+# .append(element)
+# Adding an item to the end of list
+# Ավելացնում է տարր list-ի վերջում
+l = [1, 2]
+l.append(3)
+print(l) # [1, 2, 3]
+
+# .instert(index, element)
+# Inserting an item to the given index, shifting elements to the right
+# Մութքագրում է տարր նշված ինդեքսում, տեղափոելով այլ տարրերը դեպի աջ
+l = [1, 2]
+l.insert(0, 3)
+print(l) # [3, 1, 2]
+
+# .extend(list2)
+# Adds an elements of list2 to a list
+# Ավելացնում է list2-ի տարրերը list-ին
+l = [1, 2]
+l2 = [3, 4, 5]
+l.extend(l2)
+print(l) # [1, 2, 3, 4, 5]
+
+# 
