@@ -7,7 +7,7 @@
 # 2 strings 'hello' and 'there' and builds a new string 'hellothere'.
 
 # Same to Armenian
-# Python-ի ներդրված կլաս "Str"-ը որը նույնն է ինչ String, օգտագործվում
+# Python-ի ներկառուցված կլաս "Str"-ը որը նույնն է ինչ String, օգտագործվում
 # է տեքստային տվյալների հետ աշխատելու համար:
 # Python-ի string-երը անփոփոխելի են, ինչը նշանակում է, որ նրանք չեն 
 # կարող փոփոխել իրենց արժեքը ստանալուց հետո:
