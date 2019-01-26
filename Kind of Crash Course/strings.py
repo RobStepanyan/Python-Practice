@@ -14,11 +14,17 @@
 # Օրինակ, մեկ ունենք այսպիսի արտահայտություն ('Բարև' + 'բոլորին')
 # Python-ը կվերցնի այդ երկուսը և կստեղծի մի նոր String` "Բարևբոլորին":
 
-# Creating String called s, with value "Hello World":
-# Ստեղծենք String, անվանելով այն s, և տալով "Hello World" արժեքը:
-s = "Hello World"
+# Creating String called s, with value "Hello world":
+# Ստեղծենք String, անվանելով այն s, և տալով "Hello world" արժեքը:
+s = "Hello world"
 # >>>s
-# 'Hello World'
+# 'Hello world'
+
+# Printing the type of s
+# Տպում ենք s-ի տեսակը
+# >>> s = "Hello World"
+# >>> type(s)
+# <class 'str'>
 
 # Printing length of s
 # Տպում ենք s-ի երկարություն(Տառերի քանակ + բացատների քանակ)
@@ -83,7 +89,7 @@ print(s.replace(a, b))
 # >>> a = "H"
 # >>> b = "W"
 # >>> s.replace(a,b)
-# 'Wello World'
+# 'Wello world'
 
 
 # Printing True if "H" exists in s, else printing False. Same with "a"
