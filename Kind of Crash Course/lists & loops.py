@@ -181,3 +181,93 @@ l.pop() # 3
 print(l) # ['gf', 1, 2.2, 3.0, False, 'Bye', 1]
 
 
+
+"""
+Loops
+
+Ցիկլեր
+"""
+
+# 'For' loop
+# 'For' Ցիկլ
+
+# For is used for giving different values to a single variable in one line of code.
+# Values can be numbers in spcified range, items of lists, sets, tuples,
+# dictionaries, etc. That datatypes are called "iterables", and the variable which
+takes all that data called "iterator".
+
+# For-ը օգտագործվում է մեկ փոփոխականին տարբեր արժեքներ տալու համար, որը տեղի
+# կունենա ընդամենը մեկ տողում: Արժեքները կարող են լինել` թվեր մեր ընտրած միջակայքում,
+# list-ի, set-ի, tuple-ի, dictionary-ի և այլ նման տեսակների տարրեր: 
+# Այդպիսի տվյալները կոչում են "iterables", իսկ փոփոխականին, որը ստանում է այդ 
+# արժեքները "iterator":
+
+# This is how for looks like.
+# Այսպիսի տեսք ունի for -ը:
+
+# for iterator in iterable:
+	# action / գործողություն
+
+# For example
+# Օրինակ
+l = [1, 2, 3, 4]
+for i in l:
+	print("i =", i)
+# i = 1
+# i = 2
+# i = 3
+# i = 4
+
+# range(start = 0, finish(not inclusive), step = 1)
+# If starting number is not specified then it will take default value: 0,
+# if step is not specified then it will take default value: 1
+
+# range(սկիզբ = 0, վերջ (ոչ ներառյալ), քայլ = 1)
+# Եթե միջակայքի սկզբնակետը նշված չէ, ապա այն վերցնում է 0 արժեքը,
+# եթե քայլը նշված չէ ապա այն վերցնում է 1 արժեքը:
+
+for i in range(5):
+	print(i)
+
+# 0
+# 1
+# 2
+# 3
+# 4
+
+for i in range(1, 5, 2):
+	print("I =", i)
+
+# 1
+# 3
+
+
+# Demonstartion of advantage of using for loop.
+# for ցիկլի օգտագործման առավելության ցուցադրում:
+
+# Print the square of numbers between 1 to n.
+# Տպել մինև n գտնվող թվերի քառակուսիների գումարը:
+
+n = 10
+# Without for loop/ Առանձ for-ի
+print(1 * 1)
+print(2 * 2)
+print(3 * 3)
+print(4 * 4)
+print(5 * 5)
+print(6 * 6)
+print(7 * 7)
+print(8 * 8)
+print(9 * 9)
+print(10 * 10)
+
+# Using for / Օգտագործելով for -ը
+for i in range(1, n+1):
+	print(i*i) 
+
+
+
+
+
+
+
