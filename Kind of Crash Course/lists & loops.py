@@ -199,7 +199,8 @@ takes all that data called "iterator".
 # For-ը օգտագործվում է մեկ փոփոխականին տարբեր արժեքներ տալու համար, որը տեղի
 # կունենա ընդամենը մեկ տողում: Արժեքները կարող են լինել` թվեր մեր ընտրած միջակայքում,
 # list-ի, set-ի, tuple-ի, dictionary-ի և այլ նման տեսակների տարրեր: 
-# Այդպիսի տվյալները կոչում են "iterables", իսկ փոփոխականին, որը ստանում է այդ 
+# 
+Այդպիսի տվյալները կոչում են "iterables", իսկ փոփոխականին, որը ստանում է այդ 
 # արժեքները "iterator":
 
 # This is how for looks like.
@@ -266,8 +267,66 @@ for i in range(1, n+1):
 	print(i*i) 
 
 
+"""
+While loop
 
+While Ցիկլ
+"""
 
+# The while loop in Python is used to iterate over a block of code as long as 
+# the test expression (condition) is true.
+# We generally use this loop when we don't know beforehand, the number of times to iterate.
+# while ցիկլը օգտագործվում է կոդի բլոկը կրկնելու համար այնքան ժամանակ քանի
+# դեռ պայամանը(condition)-ը հավասար է True արժեքի:
+# Հիմնականում այս ցիկլը օգտագործվում է այն ժամանակ, երբ մենք չգիտենք թե քանի անգամ
+# է մեր գործողությունը կատարվելու:
 
+# This is how while looks like.
+# Ահա թե ինչ տեսք ունի while ցիկլը:
+# while (condition):
+	# action / գործողություն
+	# step / քայլ (պարտադիր)
+# For example / Օրինակ
+l = [1, 2, 3, 4, 5, 6]
+i = 0
+while l[i] < 5:
+	print(l[i])
+	i += 1 # i = i + 1 
 
+# If the step is not specified in code block of loop, then it will become an
+# endless loop. To stop it use "ctrl+c" or "ctrl+ alt+ pause / break".
+# Եթե քայլը նված չէ ցիկլի կոդի բլոկում, ապա ցիկլը կվերածվի անվերջ ցիկլի:
+# Այդ անվերջ ցիկլը կանգնեցնելու համար օգտագործեք "ctrl+c" կամ "ctrl+ alt+ pause / break":
 
+# break & continue
+# break statement is used for stoping a loop, continue is used to give next value to 
+# iterable
+# break-ը օգտագործվում է ցիկլը կանգնեցնելու համար, իսկ continue-ն փոփոխականին 
+# հաջորդ արժեքը տալու համար
+
+# break
+
+for i in range(5):
+	if i == 3:
+		print("Gta 3-y")
+		continue
+	print(i)
+# 0
+# 1
+# 2
+# Gta 3-y
+# 4
+
+for i in range(5)
+	if i == 3:
+		print("Gta 3-y")
+		break
+	print(i)
+
+# 0
+# 1
+# 2
+# Gta 3-y
+
+# break and continue are working with the while loop similarly.
+# break-ը և continue-ն աշխատում են նույն կերպով նաև while ցիկլի հետ:
