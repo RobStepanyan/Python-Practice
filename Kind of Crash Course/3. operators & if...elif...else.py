@@ -108,3 +108,158 @@ word = "Hi"
 print("H" in word) # True
 print("B" in word) # False
 print("B" not in word) # True
+
+
+"""
+if
+elif
+else
+"""
+
+"""
+Syntax:
+_______________
+if expression:
+	body of if: (s)
+_______________
+If the expression is True, then (s) will be excuted.
+If the expression is False, then (s) won't execute.
+
+Եթե պայմանը ճիշտ է(True) ապա (s)-ը կկատարվի:
+Եթե պայմանը սխալ է(False) ապա (s)-ը չի կատարվի:
+
+# For example / Օրինակ
+______________
+if 2<3:
+	print("True")
+
+True
+_______________
+if True:
+	print("True")
+
+True
+_______________
+
+***************
+
+else Syntax:
+_______________
+if expression1:
+	s(1)
+else:
+	s(2)
+______________
+If expression1 is True, then s(1) will execute, else s(2) will execute.
+Եթե expression1-ը ճիշտ է s(1)-ը տեղի կունենա, հակառակ դեպքում s(2)-ը տեղի կունենա:
+
+# For example / Օրինակ
+______________
+if 2>3:
+	print("s1")
+else:
+	print("s2")
+
+s2
+______________
+if False:
+	print("s1")
+else:
+	print("s2")
+
+s2
+______________
+if True:
+	print("s1")
+else:
+	print("s2")
+
+s1
+______________
+
+**************
+
+elif Syntax:
+
+______________
+if expression1:
+	s(1)
+elif expression2:
+	s(2)
+else:
+	s(3)
+
+# For example / Օրինակ
+______________
+if True:
+	print("s1")
+elif True:
+	print("s2")
+else:
+	print("s3")
+
+s1
+______________
+if False:
+	print("s1")
+elif True:
+	print("s2")
+else:
+	print("s3")
+
+s2
+______________
+if False:
+	print("s1")
+elif False:
+	print("s2")
+else:
+	print("s3")
+
+s3
+______________
+You can use "if" only once and at the begining. 
+You can use "else" only once and at the end. 
+You can use "elif" as much as you want after "if" and before "else".
+Դուք կարող եք օգտագործել "if" միայն մեկ անգամ, և ամենավերևում:
+Դուք կարող եք օգտագործել "else" միայն մեկ անգամ, և ամենավերջում:
+Դուք կարող եք օգտագործել "elif" ինչքան ուզում եք, "if"-ից հետո, "else"-ից առաջ:
+"""
+
+# Difference between using only "if" and if with elif.
+# Միայն "if"-երի և "if" ու "elif"-ի տարբերությունը:
+n = 5
+if 2 < n:
+	print("2 < n")
+if 4 < n:
+	print("4 < n")
+
+# 2 < n
+# 4 < n
+
+n = 5
+if 2 < n:
+	print("2 < n")
+elif 4 < n:
+	print("4 < n")
+
+# 2 < n
+
+# __________________
+if n < 5:
+	if n > 0:
+		print("0 > n < 5")
+	else:
+		print("n < 5")
+else:
+	print("n >= 5")
+
+# n = 2: 0 > n < 5
+# n = 0: n < 5
+# n = 5: n >= 5
+# __________________
+
+if n > 2 and n < 10:
+	print("2 > n < 10")
+
+# n = 5: 2 > n < 10 
