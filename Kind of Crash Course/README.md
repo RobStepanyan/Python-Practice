@@ -1,2 +1,2 @@
-#Learn it all in specified sequence.#
-*Սովորել տրված հերթականությամբ:*
+﻿#**Learn it all in a specified sequence.**
+**Սովորել տրված հերթականությամբ:**
