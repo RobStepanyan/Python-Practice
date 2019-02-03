@@ -84,3 +84,47 @@ for i in s:
 s = {1, 2, 3, 4, 5}
 print(s) # {2, 4, 5, 3, 1}
 print(type(sorted(s))) # <class 'list'>
+
+
+# ********* Union / Միություն, 2-ը միասին ***********
+dataScientist = set(['Python', 'R', 'SQL', 'Git', 'Tableau', 'SAS'])
+dataEngineer = set(['Python', 'Java', 'Scala', 'Git', 'SQL', 'Hadoop'])
+
+# set built-in function union / set-ի ներկառուցված union ֆունկցիա
+print(dataScientist.union(dataEngineer)) # {'Tableau', 'R', 'Java', 'Hadoop', 'Scala', 'Python', 'SAS', 'Git', 'SQL'}
+
+# Equivalent Result / Համարժեք արդյունք
+print(dataScientist | dataEngineer) # {'Tableau', 'R', 'Java', 'Hadoop', 'Scala', 'Python', 'SAS', 'Git', 'SQL'}
+# *********************************************
+
+# ********* intersection / հատում *********
+# Intersection operation
+print(dataScientist.intersection(dataEngineer)) # {'Git', 'SQL', 'Python'}
+
+# Equivalent Result / Համարժեք արդյունք
+print(dataScientist & dataEngineer) # {'Git', 'SQL', 'Python'}
+# *********************************************
+
+#********* Difference / Տարբերություն *********
+# Difference Operation
+print(dataScientist.difference(dataEngineer)) # {'Tableau', 'R', 'SAS'}
+
+# Equivalent Result / Համարժեք արդյունք
+print(dataScientist - dataEngineer) # {'Tableau', 'R', 'SAS'}
+# *********************************************
+
+# ********* Symmetric Difference / Սիմետրիկ Տարբերություն *********
+# Symmetric Difference Operation
+print(dataScientist.symmetric_difference(dataEngineer)) # {'Tableau', 'R', 'Java', 'Scala', 'Hadoop', 'SAS'}
+
+# Equivalent Result / Համարժեք արդյունք
+print(dataScientist ^ dataEngineer) # {'Tableau', 'R', 'Java', 'Scala', 'Hadoop', 'SAS'}
+# **********************************************
+
+
+# Membership Tests / Առկայության ստուգում
+# Initialize a set
+possibleSet = {'Python', 'R', 'SQL', 'Git', 'Tableau', 'SAS', 'Java', 'Spark', 'Scala'}
+
+# Membership test
+print('Python' in possibleSet) # True
