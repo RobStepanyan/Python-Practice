@@ -123,8 +123,18 @@ print(dataScientist ^ dataEngineer) # {'Tableau', 'R', 'Java', 'Scala', 'Hadoop'
 
 
 # Membership Tests / Առկայության ստուգում
-# Initialize a set
+# Initialize a set / Ստեղծենք set
 possibleSet = {'Python', 'R', 'SQL', 'Git', 'Tableau', 'SAS', 'Java', 'Spark', 'Scala'}
 
 # Membership test
 print('Python' in possibleSet) # True
+
+# Subset / Ենթաբազմություն
+possibleSkills = {'Python', 'R', 'SQL', 'Git', 'Tableau', 'SAS'}
+mySkills = {'Python', 'R'}
+
+# If every value of the set mySkills is also a value of the set possibleSkills, then mySkills
+# is said to be a subset of possibleSkills, mathematically written mySkills ⊆ possibleSkills.
+# Եթե mySkills-ի ամեն մի արժեք նաև possibleSkills-ի արժեքներից է, ապա mySkills-ը possibleSkills-ի
+# ենթաբազմությունն է, մաթեմատիկորեն գրված mySkills ⊆ possibleSkills:
+print(mySkills.issubset(possibleSkills)) # True
